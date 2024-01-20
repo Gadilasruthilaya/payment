@@ -14,7 +14,7 @@ stages{
   stage('code analysis'){
       steps{
         echo 'code analysis'
-        sh ' sonar-scanner -Dsonar.host.url= http://172.31.86.197:900' -Dsonar.login= admin -Dsonar.password=admin123 -Dsonar.projectKey=payment '
+        sh ' sonar-scanner -Dsonar.host.url= http://172.31.86.197:9000' -Dsonar.login= admin -Dsonar.password=admin123 -Dsonar.projectKey=payment '
       }
   }
 
