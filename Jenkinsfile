@@ -1,3 +1,4 @@
-@Library ('roboshop')
+@Library('roboshop')
 
-python()
+env.cibuild = "python"
+mainci()
